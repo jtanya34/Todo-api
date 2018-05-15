@@ -20,15 +20,15 @@ console.log("connected to mongodb server");
 
 // console.log(JSON.stringify(result.ops,undefined,2));
 // });
-db.collection('Users').insertOne({
-	name:"Tanya Jain",
-	age:"24",
-	location:"Noida"
-},(err,result)=>{
-	if(err){
-		return console.log("unable to insert user",err);
-	}
-console.log(JSON.stringify(result.ops));
-});
+// db.collection('Users').insertOne({
+// 	name:"Tanya Jain",
+// 	age:"24",
+// 	location:"Agra"
+// },(err,result)=>{
+// 	if(err){
+// 		return console.log("unable to insert user",err);
+// 	}
+// console.log(JSON.stringify(result.ops[0].getTimestamp()));
+// });
  db.close();
  });

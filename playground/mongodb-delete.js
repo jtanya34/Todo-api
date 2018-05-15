@@ -12,15 +12,15 @@ console.log("connected to mongodb server");
 
 
 //delete many
-db.collection("Users").deleteMany({name:"mike"}).then((result)=>{
-	console.log(result);
-})
+// db.collection("Users").deleteMany({name:"mike"}).then((result)=>{
+// 	console.log(result);
+// })
 
 
 //deleteOne
-// db.collection("Todos").deleteOne({text:"eat lunch"}).then((result)=>{
-// 	console.log(result);
-// })
+db.collection("Todos").deleteOne({text:"eat lunch"}).then((result)=>{
+	console.log(result);
+})
 
 //findoneanddelete
 // db.collection("Todos").findOneAndDelete({cpmpleted:false}).then((result)=>{

@@ -25,8 +25,7 @@ console.log("connected to mongodb server");
 // 	console.log('unable to fetch Todos',err);
 // });
 
-db.collection('Users').find({
-	name:'gen'
+db.collection('Users').find({name:'gen'
 }).toArray().then((docs)=>{
 	console.log('Users');
 console.log(JSON.stringify(docs,undefined,2));
