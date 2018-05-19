@@ -19,6 +19,7 @@ var todo=new Todo({
 	text:req.body.text
 
 });
+
 todo.save().then((doc)=>{
 res.send(doc);
 },(e)=>{
@@ -115,7 +116,7 @@ app.post('/users',(req,res)=>{
 res.header('x-auth',token).send(user);
 		}).catch((e)=>{
 		res.status(400).send(e);
-	});
+	})
 
 	});
 
